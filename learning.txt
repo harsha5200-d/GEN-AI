@@ -1,0 +1,156 @@
+# GEN-AI
+
+
+question1 
+
+what is LLM
+
+1.large
+
+it is trainer on a huge amount of text data
+(books, websites, wikipedia , articles , code , conversations , etc)
+
+2. languages
+
+it understands and generates human language like english , hindhi ,spanish even programming languages like python
+
+3 . Model 
+it is a deep learning system ( a neural network ) that leans pattern 
+
+
+when we type 
+ what is python The LLM does Not 
+ * search Google
+ * Think like a human
+ * understand meaning like we do 
+
+ instead it 
+ * Looks at patterns it learned 
+ * predicts the next most likely word 
+ * keeps predicting word by word 
+
+some popular LLM's
+
+GPT MOdels
+Gemini Models
+LLaMa 
+claude
+Grok Mistral
+
+how to use these models
+
+LangChain is an open-source framework used by developers to build applications powered by Large Language Models (LLMs) like GPT-4, Claude, or Gemini. Think of the LLM as the "brain," and LangChain as the "nervous system" that connects that brain to external data sources, memory, and practical tools.
+
+
+components
+1. Models
+2. Prompts 
+3. chains
+4. memory
+5. indexes
+6. agents
+
+Ai - workflow
+
+models
+
+models are the core Intellgince Layer.
+
+in practical Generative Ai, there are mainly 3 important types
+of models
+
+chat/Language Models   emedding models
+
+1. generate text       1.convert text into numbers(vectors)
+2. answer questions    2.used in search and RAG
+3. write code          3.help find similar content 
+
+
+multimodel models
+
+1. work with more than just text
+2. can process images audio, or files
+
+
+prompt is the instruction we give to a language model.
+
+
+it tells the model 
+what to do 
+how to respond 
+what format to use
+
+types pf Prompts
+
+
+1.simple prompt 
+
+just a direct instruction
+
+example:
+explain what is machine laerining 
+basic 
+
+2. system + user prompt 
+modern chat models use roles 
+system -> sets behavior 
+user -> asks question1
+
+3. prompt templates 
+
+instead of writing prompts manually
+everytime , we create reusable templates
+
+4. structured prompts 
+
+used when we want 
+json output 
+bullet points 
+fixed format
+
+chains 
+
+real ai applications are not one-step
+
+user asks:
+
+flow - 
+1. summarize text
+2. Translate summary 
+3. return result
+
+thats chain
+
+memory 
+
+example :
+user : my name is akarsh 
+
+user : what is my name?
+
+without memory -> model doesnot know 
+with memory -> it remembers.
+
+indexes 
+
+indexes allow us to connect external data to an LLM.
+
+LLMs only know what they were trained on.
+indexes help them use:
+pdfs
+docs
+databases
+websites 
+
+agents 
+
+normal LLM:
+user -> prompt -> response
+
+but what if the task requires:
+
+*searching the web Doing Calculations
+
+
+
+
