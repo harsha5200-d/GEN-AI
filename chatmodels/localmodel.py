@@ -10,6 +10,7 @@ llm = HuggingFacePipeline.from_model_id(
     )
 )
 
+
 chat_model = ChatHuggingFace(llm=llm)
 
 res = chat_model.invoke("iskon founder acharya")
