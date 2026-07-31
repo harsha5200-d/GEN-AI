@@ -1,61 +1,48 @@
-# GEN-AI
+# 🎬 CineIP Extractor
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cinematic-ip-madhav.streamlit.app/)
 
-question1 
+CineIP Extractor is an AI-powered web application that takes any unstructured movie description or plot summary and instantly converts it into structured, easy-to-read JSON data. 
 
-what is LLM
+Built using **Streamlit**, **LangChain**, and **Mistral AI**, this tool acts as an expert data extractor, intelligently identifying missing information and structuring it beautifully.
 
-1.large
+## 🚀 Live Demo
+You can try the live application right now:
+**[https://cinematic-ip-madhav.streamlit.app/](https://cinematic-ip-madhav.streamlit.app/)**
 
-it is trainer on a huge amount of text data
-(books, websites, wikipedia , articles , code , conversations , etc)
+## ✨ Features
+* **Intelligent Extraction**: Uses Mistral AI to parse unstructured text into highly accurate structured data.
+* **World Knowledge Integration**: If details like Release Year, Director, or Cast are missing from the text, the AI uses its internal knowledge base to fill in the blanks.
+* **Beautiful UI**: A sleek, modern, glassmorphism-inspired dark mode interface built natively in Streamlit.
+* **Structured Output**: Strictly enforces output formats using Pydantic parsers.
 
-2. languages
+## 🛠️ Technology Stack
+* **Frontend**: Streamlit
+* **AI Framework**: LangChain
+* **LLM**: Mistral AI (`mistral-small-latest`)
+* **Data Parsing**: Pydantic
 
-it understands and generates human language like english , hindhi ,spanish even programming languages like python
+## 💻 Running Locally
 
-3 . Model 
-it is a deep learning system ( a neural network ) that leans pattern 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/harsha5200-d/GEN-AI.git
+   cd GEN-AI
+   ```
 
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-when we type 
- what is python The LLM does Not 
- * search Google
- * Think like a human
- * understand meaning like we do 
+3. **Set up Environment Variables**
+   Create a `.env` file in the root directory and add your Mistral API key:
+   ```toml
+   MISTRAL_API_KEY="your_api_key_here"
+   ```
 
- instead it 
- * Looks at patterns it learned 
- * predicts the next most likely word 
- * keeps predicting word by word 
-
-some popular LLM's
-
-GPT MOdels
-Gemini Models
-LLaMa 
-claude
-Grok Mistral
-
-how to use these models
-
-LangChain is an open-source framework used by developers to build applications powered by Large Language Models (LLMs) like GPT-4, Claude, or Gemini. Think of the LLM as the "brain," and LangChain as the "nervous system" that connects that brain to external data sources, memory, and practical tools.
-
-
-components
-1. Models
-2. Prompts 
-3. chains
-4. memory
-5. indexes
-6. agents
-
-Ai - workflow
-
-models
-
-models are the core Intellgince Layer.
-
-They Are 
-
-
+4. **Run the Streamlit App**
+   ```bash
+   cd CineIP
+   python -m streamlit run uicore.py
+   ```
