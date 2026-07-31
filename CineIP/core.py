@@ -7,7 +7,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 load_dotenv()
 from langchain_mistralai import ChatMistralAI
 
-model = ChatMistralAI(model = 'mistral-small-2506')
+model = ChatMistralAI(model = 'mistral-small-latest')
 
 class Movie(BaseModel):
     title: str 
