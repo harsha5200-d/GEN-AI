@@ -15,7 +15,7 @@ load_dotenv(find_dotenv())
 # --- Common Setup ---
 @st.cache_resource
 def get_model():
-    return ChatMistralAI(model="mistral-small-latest", temperature=0.9)
+    return ChatMistralAI(model="mistral-small-latest", temperature=0.0)
 
 try:
     model = get_model()
@@ -118,7 +118,7 @@ class Movie(BaseModel):
 
 parser = PydanticOutputParser(pydantic_object=Movie)
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "Extract movie information from the paragraph.\n{format_instructions}"),
+    ("system", "You are an expert movie data extractor. Extract detailed movie information based on the provided paragraph.\nIf certain information (like director, release year, cast, or rating) is missing from the text, USE YOUR OWN WORLD KNOWLEDGE to fill in the accurate details if you recognize the movie.\nEnsure that the extracted data strictly follows this schema:\n{format_instructions}"),
     ("human", "{paragraph}")
 ])
 
