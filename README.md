@@ -1,5 +1,7 @@
 # 🎬 CineIP Extractor
 
+![CineIP Background](cineip_bg.png)
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cinematic-ip-madhav.streamlit.app/)
 
 CineIP Extractor is an AI-powered web application that takes any unstructured movie description or plot summary and instantly converts it into structured, easy-to-read JSON data. 
